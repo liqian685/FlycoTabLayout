@@ -415,6 +415,8 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         if (mIndicatorStyle == STYLE_NORMAL && mIndicatorWidthEqualTitle) {
             mIndicatorRect.left = (int) (left + margin - 1);
             mIndicatorRect.right = (int) (right - margin - 1);
+
+            mIndicatorWidth = mIndicatorRect.right - mIndicatorRect.left;
         }
 
         mTabRect.left = (int) left;
